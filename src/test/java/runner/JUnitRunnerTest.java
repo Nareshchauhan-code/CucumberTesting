@@ -9,7 +9,8 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"pretty", "summary"}, snippets = CAMELCASE,
-        dryRun = true ,features = "classpath:features", glue = "stepdefenations")
+        features = "classpath:features", glue = "stepdefenations",
+        monochrome = true)
 public class JUnitRunnerTest {
 
 
